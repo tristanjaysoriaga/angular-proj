@@ -1,0 +1,195 @@
+<div class="row">
+  <div class="col-md-4">
+
+    <div class="row layoutMessage" >
+
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Panel heading</div>
+        <div class="panel-body">
+          <p>...</p>
+        </div>
+
+        <!-- List group -->
+        <ul class="list-group">
+          <li class="list-group-item">
+            
+                <div class="media list-group" >
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object" src="images/icon.svg" alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading"><a href="">{{msg.author}}</a></h4>
+                    {{msg.message}}
+                  </div>
+                  <div>
+                    <span class="glyphicon glyphicon-share-alt icon-flipped" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-retweet" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
+                  </div>
+                  
+              </div>
+
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Panel heading</div>
+        <div class="panel-body">
+          <p>...</p>
+        </div>
+
+        <!-- List group -->
+        <ul class="list-group">
+          <li class="list-group-item">
+            
+                <div class="media list-group" >
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object" src="images/icon.svg" alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading"><a href="">{{msg.author}}</a></h4>
+                    {{msg.message}}
+                  </div>
+                  <div>
+                    <span class="glyphicon glyphicon-share-alt icon-flipped" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-retweet" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
+                  </div>
+                  
+              </div>
+
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Panel heading</div>
+        <div class="panel-body">
+          <p>...</p>
+        </div>
+
+        <!-- List group -->
+        <ul class="list-group">
+          <li class="list-group-item">
+            
+                <div class="media list-group" >
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object" src="images/icon.svg" alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading"><a href="">{{msg.author}}</a></h4>
+                    {{msg.message}}
+                  </div>
+                  <div>
+                    <span class="glyphicon glyphicon-share-alt icon-flipped" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-retweet" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
+                  </div>
+                  
+              </div>
+
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Panel heading</div>
+        <div class="panel-body">
+          <p>...</p>
+        </div>
+
+        <!-- List group -->
+        <ul class="list-group">
+          <li class="list-group-item">
+            
+                <div class="media list-group" >
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object" src="images/icon.svg" alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading"><a href="">{{msg.author}}</a></h4>
+                    {{msg.message}}
+                  </div>
+                  <div>
+                    <span class="glyphicon glyphicon-share-alt icon-flipped" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-retweet" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
+                  </div>
+                  
+              </div>
+
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+  <div class="col-md-8">
+    
+    <div class="row layoutMessage" ng-controller="MainCtrl">
+
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading tweetMessageBox">
+          <img src="images/profile.jpg"  alt="" style="width:25px;">
+          <input type="email" id="exampleInputEmail1" placeholder="What's Happening?" style="width:400px;">
+          <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+        </div>
+        <div class="panel-body">
+          <p>...</p>
+        </div>
+
+        <!-- List group -->
+        <ul class="list-group">
+          <li class="list-group-item" ng-repeat="msg in tweetMsg">
+            
+                <div class="media list-group" >
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object" src="images/icon.svg" alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading"><a href="">{{msg.author}}</a></h4>
+                    {{msg.message}}
+                  </div>
+                  <div>
+                    <span class="glyphicon glyphicon-share-alt icon-flipped" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-retweet" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
+                  </div>
+                  
+              </div>
+
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+

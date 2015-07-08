@@ -20,13 +20,14 @@ angular.module('angularProjApp')
   .controller('MainCtrl', function ($scope, $firebaseArray) {
 
     var ref = new Firebase("https://incandescent-torch-533.firebaseio.com/message");
+    //load data
     $scope.fireMessage = $firebaseArray(ref);
 
     $scope.tweetAuthor = "tristan 3";
     $scope.tweetMessage = "angular test 3";
     $scope.tweetProfile = "pic 3";
 
-
+    //add data
     $scope.addMessage = function() {
       $scope.fireMessage.$add({
         author: $scope.tweetAuthor,
@@ -34,6 +35,7 @@ angular.module('angularProjApp')
         profile: $scope.tweetProfile
       });
     };
+
     
 
     $scope.tweetMsg = [

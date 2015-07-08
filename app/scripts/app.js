@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'firebase'
   ])
   .run(['$rootScope', '$location', '$window', '$route', function($rootScope, $location, $window, $route) {
     $rootScope.$on('$routeChangeSuccess', function(changeTo, changeFrom, previous) {

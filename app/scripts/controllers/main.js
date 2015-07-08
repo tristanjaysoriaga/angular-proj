@@ -8,8 +8,13 @@
  * Controller of the angularProjApp
  */
 angular.module('angularProjApp')
-  .controller('HeaderCtrl', function ($scope, $location) 
+  .controller('HeaderCtrl', function ($scope, $location, $firebaseArray) 
   { 
+
+        var ref = new Firebase("https://incandescent-torch-533.firebaseio.com/");
+        var abc = $firebaseArray(ref);
+        console.log(abc);
+
       $scope.isActive = function (viewLocation) { 
           return viewLocation === $location.path();
       };

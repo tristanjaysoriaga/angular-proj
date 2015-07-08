@@ -8,18 +8,34 @@
  * Controller of the angularProjApp
  */
 angular.module('angularProjApp')
-  .controller('HeaderCtrl', function ($scope, $location, $firebaseArray) 
+  .controller('HeaderCtrl', function ($scope, $location) 
   { 
 
-        var ref = new Firebase("https://incandescent-torch-533.firebaseio.com/");
-        var abc = $firebaseArray(ref);
-        console.log(abc);
+
 
       $scope.isActive = function (viewLocation) { 
           return viewLocation === $location.path();
       };
   })
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl', function ($scope, $firebaseArray) {
+
+    var ref = new Firebase("https://incandescent-torch-533.firebaseio.com/message");
+    $scope.fireMessage = $firebaseArray(ref);
+
+    $scope.tweetAuthor = "tristan 3";
+    $scope.tweetMessage = "angular test 3";
+    $scope.tweetProfile = "pic 3";
+
+
+    $scope.addMessage = function() {
+      $scope.fireMessage.$add({
+        author: $scope.tweetAuthor,
+        message: $scope.tweetMessage,
+        profile: $scope.tweetProfile
+      });
+    };
+    
+
     $scope.tweetMsg = [
       {
       	'profile':'pic 1',
